@@ -1,0 +1,38 @@
+run_name: "version_0"
+
+improved_tsdf_sampling: True
+point_backprojection: True
+
+depth_guidance:
+  enabled: True
+  pred_depth_dir: /tmp/mvs_depth
+  depth_scale_augmentation: True
+  bp_weighting: "none"
+  tsdf_fusion_channel: True
+  density_fusion_channel: False
+
+output_sample_rate: 2
+reduce_lr_on_plateau: False
+no_image_features: False
+
+
+initial_lr: 0.001
+steps: 60_000
+finetune_steps: 10_000
+n_views_train: 20
+n_views_val: 20
+workers_train: 8
+workers_val: 8
+workers_predict: 8
+batch_size_per_device: 2
+voxel_size: 0.04
+crop_size_nvox_train: [96, 96, 56]
+crop_size_nvox_val: [96, 96, 96]
+
+dataset_dir: "/tmp/scannet"
+tsdf_dir: "/tmp/scannet_tsdf"
+
+# if no keyframes file is provided then inference will use every frame
+test_keyframes_file: "/tmp/mvs_keyframes.json"
+
+do_prediction_timing: False
