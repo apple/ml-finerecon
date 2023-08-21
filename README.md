@@ -104,7 +104,7 @@ python main.py
 
 ## Inference
 
-We provide pre-trained weights here: [checkpoint.zip](https://docs-assets.developer.apple.com/ml-research/models/finerecon/checkpoint.zip). These are weights for our main model using resolution-agnostic TSDF supervision, depth guidance, and point-backprojection. We also provide the pre-trained weights corresponding to the ablation study (Table 4): [checkpoints_ablation.zip](https://docs-assets.developer.apple.com/ml-research/models/finerecon/checkpoints_ablation.zip).
+We provide pre-trained weights here: [checkpoint.zip](https://docs-assets.developer.apple.com/ml-research/models/finerecon/checkpoint.zip). These are weights for our main model using resolution-agnostic TSDF supervision, depth guidance, and point-backprojection.
 
 ```
 python main.py --task predict --ckpt path/to/checkpoint.ckpt
