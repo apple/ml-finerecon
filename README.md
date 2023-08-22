@@ -121,10 +121,10 @@ Evaluation code and data for 3D metrics can be found in [TransformerFusion](http
 ## Citation
 
 ```
-@article{stier2023finerecon,
+@inproceedings{stier2023finerecon,
   title={{FineRecon}: Depth-aware Feed-forward Network for Detailed 3D Reconstruction},
   author={Stier, Noah and Ranjan, Anurag and Colburn, Alex and Yan, Yajie and Yang, Liang and Ma, Fangchang and Angles, Baptiste},
-  journal={arXiv preprint},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
   year={2023}
 }
 ```
